@@ -1,0 +1,100 @@
+/* CSS Document */
+.Pagina{
+width:790px;
+height:458px;
+}
+.Flowplayer{
+position:relative;
+top:37px;
+left:0px;
+bottom:0px;
+right:0px;
+}
+.Slider01{
+position:absolute;
+top:0px;
+left:765px;
+bottom:0px;
+right:0px;
+}
+.Titulo{
+	width: 543px;
+	color:#FFFFFF;
+	position:absolute;
+	left: 11px;
+	top: 377px;
+	height: 205px;
+
+}
+
+
+* {outline: none !important;}
+textarea:focus, input:focus {outline: none !important;}
+a {color: black; font-family: arial; text-decoration: none;}
+a:hover {color: black; font-family: arial; text-decoration: none;}
+a:visited {color: black; font-family: arial; text-decoration: none;}
+
+
+.Imagenes{
+position:absolute;
+top:36px;
+bottom:0;
+right:0;
+left: 557px;
+width: 235px;
+height: 460px;
+}
+.Imagenes .img{
+	position:absolute;
+	top:225px;
+	left:1px;
+	bottom:0;
+	right:0;
+	width: 230px;
+	height: 129px;
+}
+.Canal{
+	font-family:Verdana;
+	font-weight:bold;
+	position:absolute;
+	top:72px;
+	left:50px;
+	bottom:0;
+	right:0;
+	width: 160px;
+}
+.Canal-Text{
+font-family:Verdana;
+	font-weight:bold;
+	position:absolute;
+	top:53px;
+	left:50px;
+	bottom:0;
+	right:0;
+	width: 160px;
+}
+
+.span-Videos{
+color:#FFFFFF;
+font-size:16px;
+}
+.Span1{
+	font-family:Verdana;
+	font-weight:bold;
+	color:#FFFFFF;
+	font-size:16px;
+	position:relative;
+	width: 232px;
+}
+.Span2{
+	font-family:Verdana;
+	font-weight:bold;
+	position:absolute;
+	left:1px;
+	bottom:0;
+	right:0;
+	top:359px;
+	color:#FFFFFF;
+	font-size:16px;
+	width: 232px;
+}

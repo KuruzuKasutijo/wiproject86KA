@@ -1,0 +1,133 @@
+/* CSS Document */
+* {outline: none !important;}
+textarea:focus, input:focus {outline: none !important;}
+a {color: black; font-family: arial; text-decoration: none;}
+a:hover {color: black; font-family: arial; text-decoration: none;}
+a:visited {color: black; font-family: arial; text-decoration: none;}
+
+a img {
+	border:none;
+}
+body{
+background-color:#1c1c1b;
+}
+.Slayer{
+position:absolute;
+top:8px;
+bottom:0;
+right:0;
+left:10px;
+}
+
+.Pagina{
+position:absolute;
+top:0px;
+bottom:0;
+right:0;
+left:0px;
+width: 800px;
+height: 460px;
+}
+.Banner{
+width:800px;
+height:50px;
+background-color:#262626;
+}
+.Banner-text{
+	position:absolute;
+	left:10px;
+	width:104px;
+	top: -18px;
+	}
+.Banner-P{
+font-family:Verdana;
+	font-size:25px;
+	color:#FFFFFF;
+
+}
+.Directos{
+position:absolute;
+top:0px;
+bottom:0;
+right:0;
+left:700px;
+
+}
+.Banner-img{
+position:absolute;
+top:-3px;
+bottom:0;
+right:0;
+left:318px;
+width: 175px;
+height: 30px;
+}
+.Linea{
+	position:absolute;
+	top:24px;
+	bottom:0px;
+	right:0px;
+	left:0px;
+	width:800px;
+}
+.Recomendado{
+position:absolute;
+top:287px;
+bottom:0px;
+right:0px;
+left:7px;
+font-family:Verdana;
+color:#FFFFFF;
+font-size:25px;
+}
+span{
+font-family:Verdana;
+color:#FFFFFF;
+font-size:14px;
+font-weight:bold;
+}
+.Streams{
+	position:absolute;
+	top:686px;
+	bottom:0px;
+	right:0px;
+	left:7px;
+	font-family:Verdana;
+	color:#FFFFFF;
+	font-size:25px;
+	width: 790px;
+}
+.proximamente{
+position:absolute;
+	top:713px;
+	bottom:0px;
+	right:0px;
+	left:7px;
+	font-family:Verdana;
+	color:#FFFFFF;
+	font-size:12px;
+	width: 100px;
+}
+.Explorar{
+position:absolute;
+top:903px;
+bottom:0px;
+right:0px;
+left:7px;
+font-family:Verdana;
+color:#FFFFFF;
+font-size:25px;
+}
+.Testeos{
+position:absolute;
+top:930px;
+bottom:0px;
+right:0px;
+left:7px;
+font-family:Verdana;
+color:#FFFFFF;
+font-size:11px;
+}
+.Texto-Carrousel{
+width:265px;
+}

@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+* {outline: none !important;}
+textarea:focus, input:focus {outline: none !important;}
+a {color: black; font-family: arial; text-decoration: none;}
+a:hover {color: black; font-family: arial; text-decoration: none;}
+a:visited {color: black; font-family: arial; text-decoration: none;}
+
+a img {
+	border:none;
+}
+body{
+background-color:#1c1c1b;
+}
+.Canal1{
+	position:absolute;
+	top:50px;
+	bottom:0px;
+	left: 50px;
+	right:0px;
+	width: 100px;
+	height:140px;
+}
+.Canal2{
+position:absolute;
+top:50px;
+bottom:0;
+right:0;
+left:200px;
+width: 100px;
+height: 140px;
+
+}
+
+.Canal3{
+	position:absolute;
+	top:50px;
+	bottom:0;
+	right:0;
+	left:350px;
+	width: 100px;
+	height: 140px;
+
+}
+
+.Canal4{
+position:absolute;
+top:50px;
+bottom:0;
+right:0;
+left:500px;
+width: 100px;
+height: 140px;
+
+}
+
+.Canal5{
+position:absolute;
+top:50px;
+bottom:0;
+right:0;
+left:650px;
+width: 100px;
+height: 140px;
+}
+
+.Canal6{
+	position:absolute;
+	top:200px;
+	bottom:0px;
+	left: 50px;
+	right:0px;
+	width: 100px;
+	height:140px;
+}
+.Canal7{
+	position:absolute;
+	top:200px;
+	bottom:0px;
+	left: 200px;
+	right:0px;
+	width: 100px;
+	height:140px;
+}
+.Canal8{
+	position:absolute;
+	top:200px;
+	bottom:0px;
+	left: 350px;
+	right:0px;
+	width: 100px;
+	height:140px;
+}
+.Canal9{
+	position:absolute;
+	top:200px;
+	bottom:0px;
+	left: 500px;
+	right:0px;
+	width: 100px;
+	height:140px;
+}
+.Canal10{
+	position:absolute;
+	top:200px;
+	bottom:0px;
+	left: 650px;
+	right:0px;
+	width: 100px;
+	height:140px;
+}
+.Canal11{
+	position:absolute;
+	top:350px;
+	bottom:0px;
+	left: 50px;
+	right:0px;
+	width: 100px;
+	height:140px;
+}
+.Canal12{
+	position:absolute;
+	top:350px;
+	bottom:0px;
+	left: 200px;
+	right:0px;
+	width: 100px;
+	height:140px;
+}

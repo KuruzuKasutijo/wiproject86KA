@@ -1,0 +1,101 @@
+-/* CSS Document */
+* {outline: none !important;}
+textarea:focus, input:focus {outline: none !important;}
+a {color: black; font-family: arial; text-decoration: none;}
+a:hover {color: black; font-family: arial; text-decoration: none;}
+a:visited {color: black; font-family: arial; text-decoration: none;}
+
+.Banner-Canal{
+position:absolute;
+bottom:0px;
+top:35px;
+left:0px;
+right:0px;
+width:800px;
+height:132px;
+}
+.Banner-Avatar{
+position:absolute;
+bottom:0px;
+top:87px;
+left:7px;
+right:0px;
+}
+.Banner-Texto{
+position:absolute;
+bottom:0px;
+top:50px;
+left:90px;
+right:0px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+.Pagina{
+position:absolute;
+top:0px;
+bottom:0;
+right:0;
+left:0px;
+width: 800px;
+height: 460px;
+}
+.Videos{
+position:absolute;
+top:170px;
+bottom:0px;
+right:0px;
+left:7px;
+font-family:Verdana;
+color:#FFFFFF;
+font-size:20px;
+}
+.Video1{
+position:absolute;
+top:200px;
+bottom:0;
+right:0px;
+left:7px;
+width: 183px;
+height: 170px;
+background-color:#28272c;
+}
+.Video2{
+position:absolute;
+top:200px;
+bottom:0;
+right:0px;
+left:210px;
+width: 183px;
+height: 170px;
+background-color:#28272c;
+}
+.Video3{
+position:absolute;
+top:200px;
+bottom:0;
+right:0px;
+left:411px;
+width: 183px;
+height: 170px;
+background-color:#28272c;
+}
+.Video4{
+position:absolute;
+top:200px;
+bottom:0;
+right:0px;
+left:612px;
+width: 183px;
+height: 170px;
+background-color:#28272c;
+}
+.Video5{
+position:absolute;
+top:390px;
+bottom:0;
+right:0px;
+left:7px;
+width: 183px;
+height: 170px;
+background-color:#28272c;
+}
