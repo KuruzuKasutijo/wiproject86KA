@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; utf-8" />
+<title>Index</title>
+<script type="text/javascript">
+function MM_CheckFlashVersion(reqVerStr,msg){
+  with(navigator){
+    var isIE  = (appVersion.indexOf("MSIE") != -1 && userAgent.indexOf("Opera") == -1);
+    var isWin = (appVersion.toLowerCase().indexOf("win") != -1);
+    if (!isIE || !isWin){  
+      var flashVer = -1;
+      if (plugins && plugins.length > 0){
+        var desc = plugins["Shockwave Flash"] ? plugins["Shockwave Flash"].description : "";
+        desc = plugins["Shockwave Flash 2.0"] ? plugins["Shockwave Flash 2.0"].description : desc;
+        if (desc == "") flashVer = -1;
+        else{
+          var descArr = desc.split(" ");
+          var tempArrMajor = descArr[2].split(".");
+          var verMajor = tempArrMajor[0];
+          var tempArrMinor = (descArr[3] != "") ? descArr[3].split("r") : descArr[4].split("r");
+          var verMinor = (tempArrMinor[1] > 0) ? tempArrMinor[1] : 0;
+          flashVer =  parseFloat(verMajor + "." + verMinor);
+        }
+      }
+      // WebTV has Flash Player 4 or lower -- too low for video
+      else if (userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 4.0;
+
+      var verArr = reqVerStr.split(",");
+      var reqVer = parseFloat(verArr[0] + "." + verArr[2]);
+  
+      if (flashVer < reqVer){
+        if (confirm)
+          window.location = "http://wiitube.medianewsonline.com/stop.html";
+      }
+    }
+  } 
+}
+</script>
+<script type="text/javascript" src="../flply15flow/html/flashembed.min.js"></script>
+<style type="text/css">
+* {outline: none !important;}
+textarea:focus, input:focus {outline: none !important;}
+a {color: black; font-family: arial; text-decoration: none;}
+a:hover {color: black; font-family: arial; text-decoration: none;}
+a:visited {color: black; font-family: arial; text-decoration: none;}
+
+a img {
+	border:none;
+}
+</style>
+</head>
+<body bgcolor="#181818" onload="MM_CheckFlashVersion('7,0,0,0','Lo sentimos, Esta pagina solo se puede ver en una wii');">
+<h1 style="font-family:Verdana; color:#FFFFFF; text-align:center;">Index</h1>
+<a href="FlowPlayer.html">
+<img src="../1-Mg/flowplayer_logo_0.jpg" width="150" height="150" /></a>
+<a href="FLVNEt.html">
+<img src="../1-Mg/FLV-PLAYER.png" width="150" height="150" /></a>
+<a href="Halo_Skin.html">
+<img src="../1-Mg/Halo_Skin.png" width="150" height="150" /></a>
+<a href="Clear_Skin.html">
+<img src="../1-Mg/Clear_Skin.png" width="150" height="150" /></a>
+<a href="Corona_Skin.html">
+<img src="../1-Mg/Corona_Skin.png" width="150" height="150" /></a>
+</body>
+</html>

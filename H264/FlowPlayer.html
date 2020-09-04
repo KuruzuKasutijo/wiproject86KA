@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Flow-Player</title>
+<script type="text/javascript">
+function MM_CheckFlashVersion(reqVerStr,msg){
+  with(navigator){
+    var isIE  = (appVersion.indexOf("MSIE") != -1 && userAgent.indexOf("Opera") == -1);
+    var isWin = (appVersion.toLowerCase().indexOf("win") != -1);
+    if (!isIE || !isWin){  
+      var flashVer = -1;
+      if (plugins && plugins.length > 0){
+        var desc = plugins["Shockwave Flash"] ? plugins["Shockwave Flash"].description : "";
+        desc = plugins["Shockwave Flash 2.0"] ? plugins["Shockwave Flash 2.0"].description : desc;
+        if (desc == "") flashVer = -1;
+        else{
+          var descArr = desc.split(" ");
+          var tempArrMajor = descArr[2].split(".");
+          var verMajor = tempArrMajor[0];
+          var tempArrMinor = (descArr[3] != "") ? descArr[3].split("r") : descArr[4].split("r");
+          var verMinor = (tempArrMinor[1] > 0) ? tempArrMinor[1] : 0;
+          flashVer =  parseFloat(verMajor + "." + verMinor);
+        }
+      }
+      // WebTV has Flash Player 4 or lower -- too low for video
+      else if (userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 4.0;
+
+      var verArr = reqVerStr.split(",");
+      var reqVer = parseFloat(verArr[0] + "." + verArr[2]);
+  
+      if (flashVer < reqVer){
+        if (confirm)
+          window.location = "http://wiitube.medianewsonline.com/stop.html";
+      }
+    }
+  } 
+}
+</script>
+<script type="text/javascript" src="../flply15flow/html/flashembed.min.js"></script>
+</head>
+<body bgcolor="#181818" onload="MM_CheckFlashVersion('7,0,0,0','Lo sentimos, Esta pagina solo se puede ver en una wii');">
+
+
+<div class="Flowplayer" id="flowplayerholder"></div>
+<script type="text/javascript">
+// <![CDATA[
+var fo = new SWFObject("../flply15flow/FlowPlayerDark1.swf", "FlowPlayer", "555", "335", "7", "#ffffff", true);
+// need this next line for local testing, it's optional if your swf is on the same domain as your html page
+fo.addParam("allowScriptAccess", "always");
+fo.addVariable("config", "{ videoFile: 'http://archive.org/download/Pruebas426x240flv2020/600kFLV.flv', initialScale: 'scale', showFullScreenButton: false, autoPlay: false, loop: false, autoBuffering: true, initialScale: 'scale', progressBarColor1: 0x00A7D1, progressBarColor2: 0x008FB4, bufferBarColor1: 0x00CCFF, bufferBarColor2: 0x00B3E0, timeDisplayFontColor: 0xFF0000, progressBarBorderColor1: 0x888888, authFileName: 'http://www.mytube.org/authCod.txt', }");
+fo.write("flowplayerholder");
+// ]]>
+</script>
+
+
+</body>
+</html>

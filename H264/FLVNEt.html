@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title>FLV-PLAYER</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript">
+function MM_CheckFlashVersion(reqVerStr,msg){
+  with(navigator){
+    var isIE  = (appVersion.indexOf("MSIE") != -1 && userAgent.indexOf("Opera") == -1);
+    var isWin = (appVersion.toLowerCase().indexOf("win") != -1);
+    if (!isIE || !isWin){  
+      var flashVer = -1;
+      if (plugins && plugins.length > 0){
+        var desc = plugins["Shockwave Flash"] ? plugins["Shockwave Flash"].description : "";
+        desc = plugins["Shockwave Flash 2.0"] ? plugins["Shockwave Flash 2.0"].description : desc;
+        if (desc == "") flashVer = -1;
+        else{
+          var descArr = desc.split(" ");
+          var tempArrMajor = descArr[2].split(".");
+          var verMajor = tempArrMajor[0];
+          var tempArrMinor = (descArr[3] != "") ? descArr[3].split("r") : descArr[4].split("r");
+          var verMinor = (tempArrMinor[1] > 0) ? tempArrMinor[1] : 0;
+          flashVer =  parseFloat(verMajor + "." + verMinor);
+        }
+      }
+      // WebTV has Flash Player 4 or lower -- too low for video
+      else if (userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 4.0;
+
+      var verArr = reqVerStr.split(",");
+      var reqVer = parseFloat(verArr[0] + "." + verArr[2]);
+  
+      if (flashVer < reqVer){
+        if (confirm)
+          window.location = "http://wiitube.medianewsonline.com/stop.html";
+      }
+    }
+  } 
+}
+</script>
+	</head>
+	<body bgcolor="#181818" onload="MM_CheckFlashVersion('7,0,0,0','Lo sentimos, Esta pagina solo se puede ver en una wii');">
+	<object type="application/x-shockwave-flash" data="player_flv.swf" width="575" height="329">
+    <param name="movie" value="player_flv.swf" />
+    <param name="allowFullScreen" value="true" />
+    <param name="FlashVars" value="flv=http%3A//archive.org/download/Pruebas426x240flv2020/600kFLV.flv&amp;title=Prueba 600k 8k&amp;width=575&amp;height=329&amp;autoload=1&amp;buffer=20&amp;showstop=1&amp;showvolume=1&amp;showtime=1&amp;bgcolor=181818" />
+</object>
+	</body>
+</html>

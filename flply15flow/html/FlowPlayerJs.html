@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>FlowPlayer</title>
+<script type="text/javascript" src="flashembed.min.js"></script>
+<script  type="text/javascript">
+/*
+ * Init and setup FlowPlayer. This example file shows 'advanced' features like
+ * playlists and configuring with JavaScript. FlowPlayer.html is a simpler
+ * example.
+ *
+ * NOTE: This file has been tested to work on FireFox only. It might have
+ * problems on IE.
+ */
+
+var flowPlayer1;
+function init() {
+	if (document.getElementById) {
+		flowPlayer1 = document.getElementById("FlowPlayer");
+    }
+	setFlowPlayerConfig();
+}
+
+// wait for the page to fully load before initializing
+window.onload = init;
+
+
+function setFlowPlayerConfig() {
+	flowPlayer1.setConfig(fpConf);
+}
+
+function clipSelected(clipIndex) {
+	flowPlayer1.ToClip(clipIndex);
+//	if (clipIndex == 1 || clipIndex == 2) 
+//		flowPlayer1.DoPlay();
+}
+
+// Playlist.
+var clips = [
+	{ name: 'ClickToPlay', url: 'http://www.kolumbus.fi/apiirain/video/resources/main_clickToPlay.jpg', overlayId: 'play' },
+	{ name: 'Honda ad', url: 'http://community.flowplayer.org/video/honda_accord.flv', linkUrl: 'http://flowplayer.org', linkWindow: '_self' },
+	{ name: 'River', url: 'http://community.flowplayer.org/video/river.flv' },
+	{ name: 'New lake', url: 'http://www.sunsetcities.com/sunset-park/new-lake/09230031.jpg' },
+	{ name: 'Sunset', url: 'http://www.ashdown-eyes.co.uk/28dec4-j.JPG', duration: 10 },
+	{ name: 'Chaco sunset', url: 'http://www.photo.net/photo/pcd1666/chaco-sunset-74.3.jpg', duration: 10 }
+];
+
+// FlowPlayer configuration
+var fpConf = {
+// for FMS:
+//	streamingServerURL: 'rtmp://cyzy7r959.rtmphost.com/flowplayer',
+// for red5:
+//	streamingServerURL: 'rtmp://localhost:1935/oflaDemo',
+//	thumbsOnFLV: true,
+	playList: clips,
+	showPlayList: false,
+	baseURL: '',
+	autoPlay: false,
+	autoBuffering: true,
+	startingBufferLength: 5,
+	bufferLength: 10,
+	loop: true,
+	hideControls: false,
+	initialScale: 'fill',
+	showPlayListButtons: true,
+	useNativeFullScreen: true
+}
+
+</script>
+</head>
+<body bgcolor="#CCCCCC">
+
+	<div id="flowplayerholder">
+		You need to have the <a href="http://www.macromedia.com/go/getflashplayer">Flash Player</a> installed and
+		a browser with JavaScript support.
+	</div>
+	<script type="text/javascript">
+	// <![CDATA[
+	new flashembed("flowplayerholder", { src: "../FlowPlayerDark.swf", width: 468, height: 350, id: "FlowPlayer" }, { config: { configInject: true } });
+	// ]]>
+	</script>
+
+
+<table>
+	<tr><td>Splash</td><td><a href="javascript: clipSelected(0)">Play</a></td></tr>
+	<tr><td>Honda ad (opens a site when video clicked) </td><td><a href="javascript: clipSelected(1)">Play</a></td></tr>
+	<tr><td>River</td><td><a href="javascript: clipSelected(2)">Play</a></td></tr>
+	<tr><td>New lake  (image that pauses the player when advancing from previous clip)</td><td><a href="javascript: clipSelected(3)">Play</a></td></tr>
+	<tr><td>Sunset</td><td><a href="javascript: clipSelected(4)">Play</a></td></tr>
+	<tr><td>Chaco sunset  (image shown 10 seconds)</td><td><a href="javascript: clipSelected(5)">Play</a></td></tr>
+</table>
+
+</body>
+</html>
